@@ -29,5 +29,7 @@ Après validation du formulaire :
         } else {
             echo "<p>Veuillez entrer un nombre valide.</p>";
         }
+    } elseif (isset($_GET['nombre']) && $_GET['nombre'] === '') {
+        echo "<p>Le champ nombre est vide. Veuillez entrer un nombre.</p>";
     }
     ?>
