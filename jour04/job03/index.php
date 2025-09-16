@@ -17,10 +17,10 @@ $nbArguments = count($arguments);
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Test GET</title>
+    <title>Test POST</title>
 </head>
 <body>
-    <h2>Formulaire de test (méthode GET)</h2>   
+    <h2>Formulaire de test (méthode POST)</h2>   
    
     <form method="POST" action="">
         <label>Nom : <input type="text" name="nom"></label><br><br>
