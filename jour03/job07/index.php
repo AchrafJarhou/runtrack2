@@ -7,7 +7,7 @@
 // Ex. : Ertaines choses changent, et d'autres ne changeront jamais.c
 $str = "Certaines choses changent, et d'autres ne changeront jamais.";
 $length = strlen($str);
-$rotatedStr = ""; // Chaîne résultat
+$rotatedStr = "";
 
 for ($i = 1; $i < $length; $i++) {
     $rotatedStr .= $str[$i];
