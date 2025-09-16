@@ -12,7 +12,7 @@ $dic = [
     "consonnes" => 0,
     "voyelles" => 0
 ];
-$voyelles = "aeiouyAEIOUYàâäéèêëîïôöùûü";
+$voyelles = "aeiouyAEIOUY";
 for ($i = 0; $i < strlen($str); $i++) {
     if (ctype_alpha($str[$i])) {
         if (strpos($voyelles, $str[$i]) !== false) {
@@ -36,4 +36,3 @@ echo "<table border='1'>
             </tr>
         </tbody>
       </table>";
-      
