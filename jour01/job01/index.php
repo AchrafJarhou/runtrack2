@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 // Dans le fichier runtrack2/jour01/job01, créer un fichier index.php.
 // Dans ce fichier, créez une variable nommée str. Affectez lui la valeur
 // “LaPlateforme”. Affichez le contenu de la variable str. Créez une variable str2
