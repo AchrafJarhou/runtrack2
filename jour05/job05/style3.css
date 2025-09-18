@@ -1,0 +1,6 @@
+select {
+  border: 2px solid #000000;
+  background-color: orange;
+  font-size: 1.2em;
+  padding: 5px;
+}
