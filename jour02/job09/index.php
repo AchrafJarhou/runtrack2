@@ -27,7 +27,7 @@ for ($i = 1; $i <= $hauteur; $i++) {
     }
 
     // bord droit
-    if ($i > 1) {
+    if ($i >= 1) {
         echo '\\';
     }
     echo "\n";
