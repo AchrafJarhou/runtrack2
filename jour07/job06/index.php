@@ -21,6 +21,46 @@ function leetSpeak($str)
     );
     return $leet;
 }
+// function leetSpeak($str)
+// {
+//     $lenth = strlen($str);
+//     $newStr = "";
+//     for ($i = 0; $i < $lenth; $i++) {
+//         switch ($str[$i]) {
+//             case 'A':
+//             case 'a':
+//                 $newStr .= '4';
+//                 break;
+//             case 'B':
+//             case 'b':
+//                 $newStr .= '8';
+//                 break;
+//             case 'E':
+//             case 'e':
+//                 $newStr .= '3';
+//                 break;
+//             case 'G':
+//             case 'g':
+//                 $newStr .= '6';
+//                 break;
+//             case 'L':
+//             case 'l':
+//                 $newStr .= '1';
+//                 break;
+//             case 'S':
+//             case 's':
+//                 $newStr .= '5';
+//                 break;
+//             case 'T':
+//             case 't':
+//                 $newStr .= '7';
+//                 break;
+//             default:
+//                 $newStr .= $str[$i];
+//                 break;
+//         }
+//     }
+// }
 echo leetSpeak("Bonjour LaPlateforme");
 echo "<br>";
 echo leetSpeak("Leet Speak");
