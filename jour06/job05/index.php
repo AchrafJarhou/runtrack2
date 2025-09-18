@@ -6,7 +6,7 @@
 // Lorsque l’on valide le formulaire, le style sélectionné doit être inclus et donc le visuel
 // doit changer.
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['style'])) {
-    $style = $_POST['style'];
+    $style = $_POST['style'] ?? "";
     $cssFile = '';
     if (in_array($style, ['style1', 'style2', 'style3'])) {
         $cssFile = $style . '.css';
@@ -26,9 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['style'])) {
     <form method="post" action="">
     <label for="style">Choisissez un style :</label>
     <select name="style" id="style">
-        <option value="style1" <?=$style == 'style1' ? 'selected' : '' ?>>Style 1</option>
-        <option value="style2" <?=$style == 'style2' ? 'selected' : '' ?>>Style 2</option>
-        <option value="style3" <?=$style == 'style3' ? 'selected' : '' ?>>Style 3</option>
+        <option value="style1" <?=(isset($style) && $style == 'style1') ? 'selected' : '' ?>>Style 1</option>
+        <option value="style2" <?=(isset($style) && $style == 'style2') ? 'selected' : '' ?>>Style 2</option>
+        <option value="style3" <?=(isset($style) && $style == 'style3') ? 'selected' : '' ?>>Style 3</option>
     </select>
     <input type="submit" value="Appliquer le style">
 </form>
