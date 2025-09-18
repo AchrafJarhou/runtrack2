@@ -19,16 +19,11 @@ echo "<pre>"; // Preserve formatting / Préserver le formatage
 for ($i = 1; $i <= $hauteur; $i++) {
     //  Calculer le nombre d'espaces avant les étoiles
     $spaces = $hauteur - $i;
-
-
     //  Calculer le nombre d'étoiles pour la ligne actuelle
     $stars = 2 * $i - 1;
-
     //  Afficher les espaces
     echo str_repeat(" ", $spaces);
-
     //  Afficher les étoiles
     echo str_repeat("*", $stars);
-
     echo "\n"; //  Passe à la ligne suivante
 }
