@@ -49,7 +49,7 @@ maison qui s’affiche sur la page doit ressembler à ceci : -->
             }
 
             // Dessiner le sol
-            echo str_repeat('_', $largeur) . "\n";
+            echo str_repeat('-', $largeur) . "\n";
             echo "</div>";
         } else {
             echo "<p>Veuillez entrer des valeurs valides pour la largeur et la hauteur.</p>";
